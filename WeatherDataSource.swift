@@ -50,8 +50,8 @@ struct WeatherDataSource{
                     let parsed = try JSONDecoder().decode(weather.self, from: jsonData)
                     completion(parsed)
                     let json = try JSONSerialization.jsonObject(with: jsonData, options: [])
-               //     print(json)
-               //     print(parsed)
+                    //print(jsonData)
+                    print(parsed)
                 } catch{
                     print(error)
                 }
